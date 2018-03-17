@@ -8,18 +8,17 @@ app.use(express.static('public'))
 
 let items = [];
 let id = 0;
-let title = req.body.name;
 
-app.get('/api/' + title + 'items', (req, res) => {
+app.get('/api/items', (req, res) => {
   // if (req.body.toBeSorted) {
   //   items.sort(reg.body.priority);
   // }
   res.send(items);
 });
 
-app.post('/api/' + title + 'items', (req, res) => {
+app.post('/api/items', (req, res) => {
   id = id + 1;
-  let item = {id:id, text:req.body.text, date:};
+  let item = {id:id, text:req.body.text};
   items.push(item);
   res.send(item);
 });
