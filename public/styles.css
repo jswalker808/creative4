@@ -1,0 +1,23 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.container-fluid.col-6.my-5.justify-content-center {
+  border: solid 2px black;
+}
+
+textarea {
+  width: 50%;
+}
+
+h1 {
+
+}
+
+#link {
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
